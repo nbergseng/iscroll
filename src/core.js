@@ -108,6 +108,7 @@ IScroll.prototype = {
 				return;
 			}
 		}
+		e.stopPropagation();
 
 		if ( !this.enabled || (this.initiated && utils.eventType[e.type] !== this.initiated) ) {
 			return;
